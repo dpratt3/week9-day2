@@ -3,8 +3,8 @@ const [addNums, addManyNums] = require("./phase-1");
 // Runs `addNums` in 10 increasing increments
 function addNums10(increment) {
   let sums = []
-  for(let i = 1; i <= 10; i+= increment){
-    sums.push(addNums(i))
+  for(let i = 1; i <= 10; i++){
+    sums.push(addNums(i * increment))
   }
   return sums;
 }
