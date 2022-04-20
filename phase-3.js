@@ -1,9 +1,9 @@
 const [addNums, addManyNums] = require("./phase-1");
 
-function addNums10Timing(increment) {
-  
+function addNums10(increment) {
+
   let sums = []
-  for(let i = 1; i <= 10; i++){
+  for (let i = 1; i <= 10; i++) {
     //console.time()
     start = Date.now()
     sums.push(addNums(i * increment))
@@ -15,6 +15,9 @@ function addNums10Timing(increment) {
 }
 
 //addNums10Timing(10**8)
+addNums10(10 ** 8)
+
+// Your code here
 
 function addManyNums10Timing(increment) {
   // Copy your `addManyNums10` code here
